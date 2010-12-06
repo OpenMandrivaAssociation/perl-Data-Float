@@ -1,5 +1,5 @@
 %define upstream_name    Data-Float
-%define upstream_version 0.010
+%define upstream_version 0.011
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    Details of the floating point data type
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.lzma
+Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
