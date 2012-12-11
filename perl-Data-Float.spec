@@ -56,3 +56,19 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.11.0-3mdv2011.0
++ Revision: 657773
+- rebuild for updated spec-helper
+- rebuild for updated spec-helper
+
+* Mon Dec 06 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.11.0-1mdv2011.0
++ Revision: 612361
+- new version
+
+* Sat Aug 28 2010 Shlomi Fish <shlomif@mandriva.org> 0.10.0-1mdv2011.0
++ Revision: 573832
+- import perl-Data-Float
+
