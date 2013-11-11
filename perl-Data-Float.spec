@@ -1,15 +1,15 @@
 %define upstream_name    Data-Float
-%define upstream_version 0.011
+%define upstream_version 0.012
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    1
 
 Summary:    Details of the floating point data type
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Data/Data-Float-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
@@ -22,7 +22,6 @@ BuildRequires: perl(strict)
 BuildRequires: perl(warnings)
 BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module is about the native floating point numerical data type. A
@@ -43,14 +42,11 @@ manipulate floating point values at a low level.
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -71,4 +67,5 @@ rm -rf %buildroot
 * Sat Aug 28 2010 Shlomi Fish <shlomif@mandriva.org> 0.10.0-1mdv2011.0
 + Revision: 573832
 - import perl-Data-Float
+
 
