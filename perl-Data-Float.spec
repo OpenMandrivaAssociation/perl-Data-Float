@@ -1,14 +1,14 @@
 %define upstream_name    Data-Float
 
 Name:       perl-%{upstream_name}
-Version:    0.013
+Version:    0.015
 Release:    1
 
 Summary:    Details of the floating point data type
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/Data-Float-%{version}.tar.gz
+Url:        https://github.com/robrwo/Data-Float
+Source0:    https://cpan.metacpan.org/authors/id/R/RR/RRWO/Data-Float-%{version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
