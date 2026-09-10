@@ -1,7 +1,7 @@
 %define upstream_name    Data-Float
 
 Name:       perl-%{upstream_name}
-Version:    0.015
+Version:	0.015
 Release:    1
 
 Summary:    Details of the floating point data type
